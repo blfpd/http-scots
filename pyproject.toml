@@ -1,0 +1,42 @@
+[project]
+name = "http-scots"
+version = "0.1.0"
+description = "HTTP methods and status codes, but in Scots. Not safe for work, nor for polite company."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Baptiste Darthenay", email = "baptiste.darthenay@gmail.com" }]
+keywords = ["http", "status-codes", "scots", "scottish", "enum", "humour", "nsfw"]
+requires-python = ">=3.11"
+dependencies = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/blfpd/http-scots"
+Repository = "https://github.com/blfpd/http-scots"
+Issues = "https://github.com/blfpd/http-scots/issues"
+Changelog = "https://github.com/blfpd/http-scots/blob/main/CHANGELOG.md"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.11.9,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
